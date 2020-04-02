@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		1EBDB03E2420346400A5A7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBDB03D2420346400A5A7B4 /* Assets.xcassets */; };
 		1EBDB0412420346400A5A7B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBDB0402420346400A5A7B4 /* Preview Assets.xcassets */; };
 		1EBDB0442420346400A5A7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBDB0422420346400A5A7B4 /* LaunchScreen.storyboard */; };
+		1EBDB04C2420362D00A5A7B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EBDB04B2420362C00A5A7B4 /* GoogleService-Info.plist */; };
+		1EBDB04E2421842100A5A7B4 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBDB04D2421842100A5A7B4 /* SwiftUIView.swift */; };
+		95D06C22F44C33DB5070111B /* Pods_Firebase_Google_Sign_In.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4064B8FDFABA7F26561E34 /* Pods_Firebase_Google_Sign_In.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		1EBDB0402420346400A5A7B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1EBDB0432420346400A5A7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EBDB0452420346400A5A7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EBDB04B2420362C00A5A7B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1EBDB04D2421842100A5A7B4 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		B6B4551911A822DA53AF0BFB /* Pods-Firebase Google Sign In.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Google Sign In.release.xcconfig"; path = "Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In.release.xcconfig"; sourceTree = "<group>"; };
+		BE4064B8FDFABA7F26561E34 /* Pods_Firebase_Google_Sign_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Google_Sign_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDF9B390C5EDDC535BE87FD /* Pods-Firebase Google Sign In.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Google Sign In.debug.xcconfig"; path = "Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D06C22F44C33DB5070111B /* Pods_Firebase_Google_Sign_In.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1EBDB0362420346100A5A7B4 /* Firebase Google Sign In */,
 				1EBDB0352420346100A5A7B4 /* Products */,
+				7C423395C2E62293BF901CCD /* Pods */,
+				272F6F368EF072FF66C32F96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +67,7 @@
 		1EBDB0362420346100A5A7B4 /* Firebase Google Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				1EBDB04B2420362C00A5A7B4 /* GoogleService-Info.plist */,
 				1EBDB0372420346100A5A7B4 /* AppDelegate.swift */,
 				1EBDB0392420346100A5A7B4 /* SceneDelegate.swift */,
 				1EBDB03B2420346100A5A7B4 /* ContentView.swift */,
@@ -63,6 +75,7 @@
 				1EBDB0422420346400A5A7B4 /* LaunchScreen.storyboard */,
 				1EBDB0452420346400A5A7B4 /* Info.plist */,
 				1EBDB03F2420346400A5A7B4 /* Preview Content */,
+				1EBDB04D2421842100A5A7B4 /* SwiftUIView.swift */,
 			);
 			path = "Firebase Google Sign In";
 			sourceTree = "<group>";
@@ -75,6 +88,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		272F6F368EF072FF66C32F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE4064B8FDFABA7F26561E34 /* Pods_Firebase_Google_Sign_In.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C423395C2E62293BF901CCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF9B390C5EDDC535BE87FD /* Pods-Firebase Google Sign In.debug.xcconfig */,
+				B6B4551911A822DA53AF0BFB /* Pods-Firebase Google Sign In.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EBDB0482420346400A5A7B4 /* Build configuration list for PBXNativeTarget "Firebase Google Sign In" */;
 			buildPhases = (
+				11924FB02E0B96F8AF11482F /* [CP] Check Pods Manifest.lock */,
 				1EBDB0302420346100A5A7B4 /* Sources */,
 				1EBDB0312420346100A5A7B4 /* Frameworks */,
 				1EBDB0322420346100A5A7B4 /* Resources */,
+				58934FA996B6CD649165528C /* [CP] Embed Pods Frameworks */,
+				C9741319D772B01634AFEB44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +167,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EBDB0442420346400A5A7B4 /* LaunchScreen.storyboard in Resources */,
+				1EBDB04C2420362D00A5A7B4 /* GoogleService-Info.plist in Resources */,
 				1EBDB0412420346400A5A7B4 /* Preview Assets.xcassets in Resources */,
 				1EBDB03E2420346400A5A7B4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11924FB02E0B96F8AF11482F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Firebase Google Sign In-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58934FA996B6CD649165528C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9741319D772B01634AFEB44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firebase Google Sign In/Pods-Firebase Google Sign In-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EBDB0302420346100A5A7B4 /* Sources */ = {
@@ -148,6 +241,7 @@
 			files = (
 				1EBDB0382420346100A5A7B4 /* AppDelegate.swift in Sources */,
 				1EBDB03A2420346100A5A7B4 /* SceneDelegate.swift in Sources */,
+				1EBDB04E2421842100A5A7B4 /* SwiftUIView.swift in Sources */,
 				1EBDB03C2420346100A5A7B4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +376,7 @@
 		};
 		1EBDB0492420346400A5A7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDF9B390C5EDDC535BE87FD /* Pods-Firebase Google Sign In.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +397,7 @@
 		};
 		1EBDB04A2420346400A5A7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B4551911A822DA53AF0BFB /* Pods-Firebase Google Sign In.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
